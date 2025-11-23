@@ -1,0 +1,62 @@
+# Geniş Kapsamlı Git Ignore Dosya Örneği (Next.js Projeleri İçin)
+
+## 📦 Bağımlılıklar ve Derleme Çıktıları
+# Node.js bağımlılıkları dizini
+/node_modules
+
+# Next.js derleme çıktıları (Build Artifacts)
+# Bu dizin, "next build" komutu ile oluşturulur ve yeniden oluşturulabilir.
+/.next/
+
+# Next.js'in statik derleme dosyaları (production ve development mode'da farklılık gösterebilir)
+/out/
+/dist/
+
+## ⚙️ Yerel Yapılandırma ve Çevre Dosyaları
+# Ortam değişkenleri (Environment Variables)
+# Bu dosyalar hassas bilgileri (API Anahtarları, Veritabanı Şifreleri vb.) içerir.
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.*.local
+
+# Yerel depolama için kullanılan veritabanı veya log dosyaları
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Veritabanı yerel verileri
+/data
+
+## 💻 İşletim Sistemi ve Editör Geçici Dosyaları
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# WebStorm / JetBrains IDE'leri
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+## 🧪 Test ve Ekstra Dosyalar
+# Test kapsamı raporları
+/coverage
+
+# Sertifika dosyaları
+*.pem
+*.key
+
+# npm'in oluşturduğu geçici dosyalar
+/tmp
+/temp
